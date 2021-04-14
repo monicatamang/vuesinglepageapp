@@ -1,7 +1,10 @@
 <template>
     <header>
         <h1>Calgary's Coffee Shop</h1>
-        <a href="#">Home</a>
+        <a href="#home">Home</a>
+        <a href="#bestSellersSection">Best Sellers</a>
+        <a href="#ownerSection">Owner</a>
+        <a href="#baristaSection">Baristas</a>
     </header>
 </template>
 
@@ -16,7 +19,7 @@
     header {
         display: grid;
         place-items: center;
-        grid-auto-flow: column;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
     }
 
     h1 {

@@ -12,7 +12,9 @@
 </script>
 
 <style scoped>
-    p {
+    footer {
+        display: grid;
+        place-items: center;
         min-height: 10vh;
     }
 </style>
