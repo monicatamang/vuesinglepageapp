@@ -3,22 +3,25 @@
         <section>
             <h1>Welcome to Calgary's Coffee Shop</h1>
             <div>
-                <p>Amazing coffee is just one small part of who we are. To us, coffee represents an incredible opportunity to positively change people’s lives, through meaningful connection and generous servitude. It’s about leaving things better each day- for our people, our relationships and our environment. And, if we can spark someone’s imagination around what coffee can be along the way, then we’ve done our jobs. The world of coffee impacts a staggering amount of people. We take our role and influence in the industry very seriously, and see it as an incredible opportunity and responsibility to improve the lives of the people that link each of us from seed to cup.</p>
-                <img src="https://media3.s-nbcnews.com/j/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p_67dfb6820f7d3898b5486975903c2e51.fit-1240w.jpg" alt="A latte with a leaf design microfoam on top displayed in white ceramic mug placed on top of a white saucer. The white mug and saucer is placed on a wooden table with a small, wooden spoon and coffee beans in the background.">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, a. Voluptas quia aperiam error, culpa ipsa eos doloremque praesentium obcaecati saepe perspiciatis. Error nisi, quasi quo facilis voluptatibus minima doloremque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ullam laborum eius tenetur id? Laboriosam possimus sunt, minima ipsum, neque vero, sit alias repudiandae nemo eaque rem eligendi quaerat ea? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam expedita sapiente veritatis quidem recusandae magnam ipsum ducimus consectetur doloremque sint quam quod, ab incidunt. Suscipit omnis doloremque saepe modi magni?</p>
+                <img src="https://media3.s-nbcnews.com/j/newscms/2019_33/2203981/171026-better-coffee-boost-se-329p_67dfb6820f7d3898b5486975903c2e51.fit-1240w.jpg" alt="A latte with a microfoam leaf design on top displayed in white ceramic mug placed on top of a white saucer. The white mug and saucer is placed on a wooden table with a small, wooden spoon and coffee beans in the background.">
             </div>
         </section>
+        <!-- Inserting the best sellers, owner and barista components into the HTML file so that it can be used to style the tags and show up on the page -->
         <page-body-best-sellers></page-body-best-sellers>
         <page-body-owner></page-body-owner>
         <page-body-baristas></page-body-baristas>
     </body>
 </template>
 
-// Exporting the body component so that it can be accessible or imported to the home page
 <script>
+// Importing the best sellers, owner and baristas component
 import PageBodyBestSellers from "./PageBodyBestSellers";
 import PageBodyOwner from "./PageBodyOwner";
 import PageBodyBaristas from "./PageBodyBaristas";
 
+// Registering the best sellers, owner and baristas component
+// Exporting the body component so that it can be used or imported to the home page
 export default {
     name: "page-body",
     components: {
@@ -30,6 +33,7 @@ export default {
 </script>
 
 <style scoped>
+/* Styling the HTML tags that are only applied to this component */
     body {
         margin-top: 10vh;
     }
@@ -37,7 +41,7 @@ export default {
     section {
         display: grid;
         place-items: center;
-        row-gap: 25vh;
+        row-gap: 20vh;
         padding: 5% 5% 13% 5%;
     }
 

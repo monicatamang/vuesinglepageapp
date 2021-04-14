@@ -8,14 +8,15 @@
     </header>
 </template>
 
-// Exporting the header component so that it can be accessible or imported to the home page
 <script>
+// Exporting the header component so that it can be used or imported to the home page
     export default {
         name: "page-header"
     }
 </script>
 
 <style scoped>
+/* Styling the HTML tags that are only applied to this component */
     header {
         display: grid;
         place-items: center;
@@ -32,5 +33,4 @@
         color: #1F232C;
         font-weight: bold;
     }
-
 </style>
