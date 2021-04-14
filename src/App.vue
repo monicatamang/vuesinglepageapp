@@ -1,17 +1,24 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <page-header></page-header>
+    <page-body></page-body>
+    <page-footer></page-footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// Importing the header, body and footer components into the home page
+import PageHeader from "./components/PageHeader.vue";
+import PageBody from "./components/PageBody.vue";
+import PageFooter from "./components/PageFooter.vue";
 
+// Registering the header, body and footer components into the home page
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PageHeader,
+    PageBody,
+    PageFooter
   }
 }
 </script>
@@ -24,5 +31,10 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
 }
 </style>
